@@ -9,7 +9,7 @@ For a demonstration see [this video](https://vimeo.com/44049736) or try out some
 
 ### Examples ###
 
-[![facetracking](http://auduno.github.com/headtrackr/examples/media/facetracking_thumbnail.png)](http://auduno.github.com/headtrackr/examples/facetracking.html)
+[![facetracking](./examples/facetracking.html)
 [![sprites](http://auduno.github.com/headtrackr/examples/media/sprites_thumbnail.png)](http://auduno.github.com/headtrackr/examples/sprites_canvas.html)
 [![facekat](http://auduno.github.com/headtrackr/examples/media/facekat_thumbnail.png)](http://www.shinydemos.com/facekat/)
 [![targets](http://auduno.github.com/headtrackr/examples/media/targets_thumbnail.png)](http://auduno.github.com/headtrackr/examples/targets.html)
