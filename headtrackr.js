@@ -148,7 +148,10 @@ headtrackr.Tracker = function(params) {
 	
 	this.init = function(video, canvas, setupVideo) {
 		if (setupVideo === undefined || setupVideo == true) {
-			navigator.getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia || navigator.msGetUserMedia;
+			//https://github.com/auduno/headtrackr/issues/52
+			//firefox
+			navigator.mediaDevices.getUserMedia({ video: true, audio: false }).then(stream => video.srcObject = stream).catch(e => log(e.name + ": "+ e.message)); var log = msg => div.innerHTML += msg + "<br>";
+			// navigator.getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia || navigator.msGetUserMedia;
 			window.URL = window.URL || window.webkitURL || window.msURL || window.mozURL;
 			// check for camerasupport
 			if (navigator.getUserMedia) {
